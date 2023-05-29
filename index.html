@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="images/logo.svg" alt="logo da splitter" />
+      </header>
+
+      <main>
+        <section class="esquerda">
+          <article>
+            <p>Bill</p>
+            <div class="icons">
+              <img class="icon" src="images/icon-dollar.svg" alt="" />
+              <input id="valor" class="input" type="number" placeholder="0" />
+            </div>
+          </article>
+
+          <article>
+            <p>Select Tip %</p>
+            <div class="tips">
+              <button onclick="porcentagem(5)" class="tip">5%</button>
+              <button onclick="porcentagem(10)" class="tip">10%</button>
+              <button onclick="porcentagem(15)" class="tip">15%</button>
+              <button onclick="porcentagem(25)" class="tip">25%</button>
+              <button onclick="porcentagem(50)" class="tip">50%</button>
+              <input class="custom" type="number" placeholder="Custom" />
+            </div>
+          </article>
+
+          <article>
+            <p>Number of People</p>
+            <div class="icons">
+              <img class="icon" src="images/icon-person.svg" alt="" />
+              <input id="pessoas" class="input" type="number" placeholder="0" />
+            </div>
+            <p class="erro">Can't be zero</p>
+          </article>
+        </section>
+
+        <section class="direita">
+          <article>
+            <div>
+              <div>
+                <p>Tip Amount</p>
+                <p class="person">/ person</p>
+              </div>
+              <div>
+                <p class="result porPessoa">$0.00</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <p>Total</p>
+                <p class="person">/ person</p>
+              </div>
+              <div>
+                <p class="result total">$0.00</p>
+              </div>
+            </div>
+          </article>
+          <button class="reset">reset</button>
+        </section>
+      </main>
+
+      <footer class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/mickaelmorais">micka</a>.
+      </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
